@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple music player</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="musicplayer.css">
+    <link rel="stylesheet" href="assets/css/css/fontawesome.css">
+</head>
+<body>
+   <div class="player">
+    <div class="details">
+        <h1 >My music player <i class="glyphicon glyphicon-music"></i></h1>
+        <div class="now-playing" >playing :</div>
+        <div class="track-art"></div>
+        <div class="track-art">Track name :</div>
+        <div class="track-art"> Track artist :</div>
+    </div>
+<div class="buttons">
+   <button onclick="play()"><i class="glyphicon glyphicon-play-circle"></i> play</button>&nbsp;
+   <button onclick="pause()"><i class="glyphicon glyphicon-pause"></i>pause</button>
+</div>
+   </div>
+   <div class="slider-container">
+<div class="current-time">00:00</div>
+<input type="range" min="1" max="100"
+value="0" class="seek-slider" onchange="seekTo()">
+<div class="total-duration">00:00</div>
+   </div>
+   <div class="slider-container">
+    <label>Volume</label>
+    <input type="range" min="1" max="100"
+    value="99" class="volume-slider" onchange="setVolume()">
+   </div>
+   <script src="assets/js/jquery.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+   <script src="musicplayer.js"></script>
+</body>
+</html>
