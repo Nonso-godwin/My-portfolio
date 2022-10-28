@@ -1,0 +1,44 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: white;
+    font-style: italic;
+  }
+  .circle{
+    position: relative;
+    left: 120px;
+    top: -40px;
+  }
+
+  .footer{
+    
+    text-align: center;
+  }
+    .nav{
+    position: relative;
+    top:-20px ;
+    
+  }
+  .navbar{
+    background-color: #b100cd;
+    border-radius: 5px;
+    height: 70px;
+  }
+
+    .tab{
+      
+      width:100% ;
+      
+      border-width:thin;
+      border-style:solid ;
+    }
+    .fst{
+      background-color:#b100cd ; 
+    }
+    .bod{
+      background-color:#b1b1b1 ;
+    }
+.opt{
+  display: flex;
+  justify-content: space-evenly;
+}
