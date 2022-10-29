@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Godwin portflorlio website</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <style>
                .box{
            
@@ -23,11 +24,8 @@
             font-style: italic;
             font-family: 'Times New Roman', Times, serif;
         }
-        .fst{
-           
-            background-color: white;
-            text-align: center;
-        }
+      
+        
         .snd{
             background-color: #b100cd;
             text-align: center;
@@ -37,7 +35,7 @@
             background-color:white;
            width:270px;
            border-radius: 15px;
-           height:570px;
+           height:730px;
            border-color: black;
            border-width:thin;
            border-style:solid ;
@@ -59,30 +57,62 @@
            text-align: center;
 
         }
-
+        @media only screen and (max-width: 480px) {
+  .responsive {
+    width: 100%;
+  }
+  img{
+    width: 10%;
+  }
+}
     </style>
 </head>
 <body >
     
    <div class="row">
-    <div class="col-md-12 jumbotron fst">
-        <br><br>
-        <h2>Front end Developer & <br>
-            Mentor
-        </h2>
-        <h3>
-            I code impressively, and I love <br>
-            what I do.
-        </h3>
-        <img src="assets/asset/img/download (2).jpg" width="300px">
+    <div class="col-md-12">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+  
+        <div class="item active">
+          <img src="assets/asset/img/lap.jpg" alt="Los Angeles" style="width:100%;" class="responsive">
+          <div class="carousel-caption">
+            <h3>Los Angeles</h3>
+            <p>LA is always so much fun!</p>
+          </div>
+        </div>
+  
+       
+    </div> 
+      </div>
+  </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-   </div>
+  </div>
+  
+      
+  
    <div class="row">
     <div class="col-md-12 snd">
 <h1>Hi, I'm Godwin. Nice to 
     <br>meet you
 </h1>
-<h3>I am a certified and experienced Front
+<h3>I am a certified Front
     end website developer who has 
     worked for some people and engaged 
     myself in website making and management. <br>
@@ -101,12 +131,14 @@
 <br>using my knowledge and experience.
    </h3>
    <h3><b>Languages I speak and write :</b>
-<br>HTML, CSS, Javascript
+<br>HTML <img src="assets/asset/img/html-icon.1d7b133e22ffe4829da6.png" width="40px">
+<br> CSS <img src="assets/asset/img/css.jpeg" width="40px">
+<br> Javascript <img src="assets/asset/img/js2.png" width="40px">
 </h3>
    <h3><b>Development tools :</b><br>
-Bootstrap <br>
-Git hub <br>
-Git bash 
+Bootstrap <img src="assets/asset/img/boostrap.png" width="40px"><br><br>
+Git hub <img src="assets/asset/img/git.png"width="40px"><br><br>
+Git bash <img src="assets/asset/img/git bash.png" width="40px">
 </h3>
  
 </div>
@@ -132,7 +164,9 @@ building some website such as <br>
     Interested in working with me <br>on your project ?
 </h2>
 <h3>
-    contact me on my email:feelgodgodwin@gmail.com
+    +2348167730200 <br>
+    +2349024524176 <br>
+    feelgodgodwin@gmail.com
 </h3>
 </div>
     <script src="assets/js/jquery.js"></script>
