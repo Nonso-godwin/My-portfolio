@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="musicplayer.css">
     <link rel="stylesheet" href="assets/css/css/fontawesome.css">
+    <script>
+ 
+</script>
+</script>
+
 </head>
 <body>
    <div class="player">
@@ -19,8 +24,8 @@
         <div class="track-art"> Track artist :</div>
     </div>
 <div class="buttons">
-   <button onclick="play()"> play</button>&nbsp;
-   <button onclick="pause()">pause</button>
+   <button onclick="play()" type="button"> play</button>&nbsp;
+   <button onclick="pause()" type="button">pause</button>
 </div>
    </div>
    <div class="slider-container">
@@ -34,6 +39,10 @@ value="0" class="seek-slider" onchange="seekTo()">
     <input type="range" min="1" max="100"
     value="99" class="volume-slider" onchange="setVolume()">
    </div>
+   <audio controls>
+<source src="assets/asset/Music/Ayra_Starr_-_Rush_Audio_.mp3">
+   </audio>
+    
    <script src="assets/js/jquery.js"></script>
    <script src="assets/js/bootstrap.min.js"></script>
    <script src="musicplayer.js"></script>

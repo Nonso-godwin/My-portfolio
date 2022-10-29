@@ -1,5 +1,9 @@
-function play(){
-    let tst = document.getElementById("h2").innerHTML;
-    document.getElementById("test").innerHTML=tst;
+var x = document.getElementById("myAudio"); 
 
-}
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
