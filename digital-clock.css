@@ -1,0 +1,42 @@
+.time-box{
+    border-width: thick;
+    border-radius: 15px;
+    border-color: red;
+    margin-top: 100px;
+    margin-left: 105px;
+    margin-right: 300px;
+    padding: 100px;
+    font-size: xx-large;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 200px;
+    background-color: black;
+    color: red;
+}
+@media  screen and (max-width:540px) {
+
+    .container{
+        width: 100%;
+        font-size: xx-large;
+        display: flex;
+        align-items: center;
+    
+    }
+    .time-box{
+      
+        border-radius: 15px;
+        border-color: red;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        font-size: xx-large;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: red;
+    }
+}
