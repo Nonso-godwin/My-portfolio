@@ -36,6 +36,8 @@ am = "pm";
 }else if (hours == 23){
     hours = 1;
     am = "am";
+}else if (hours > 12){
+    hours = hours - 12
 }
 
 }
