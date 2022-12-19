@@ -2,11 +2,21 @@ let hourTime = document.querySelector(".hour");
 let minuteTime = document.querySelector(".minute");
 let secondTime = document.querySelector(".second");
 let amTime = document.querySelector(".am");
+let dateTime = document.querySelector(".screen");
+let clockInterval  ;
 let da = new Date();
 let hours =  da.getHours();
 let minutess =  da.getMinutes();
 let seconds =  da.getSeconds();
+let dat = da.getDate() + "-" + da.getMonth() + "-" + da.getFullYear() ;
 let am =  "am";
+
+
+// secTick()
+
+dateTime.innerText = dat
+console.log(addsec);
+
 
 function secTick(){
     seconds =  seconds + 1;
@@ -17,6 +27,7 @@ function secTick(){
 if(seconds == 59){
     seconds = 0 ;
     minutess += 1;
+    dateTime = dat;
 }else if (minutess == 59){
     minutess = 0;
     hours += 1;
@@ -28,7 +39,17 @@ am = "pm";
 }
 
 }
-// secTick()
-setInterval(secTick , 1000);
 
-console.log(addsec);
+function startClock (){
+    clockInterval = setInterval(secTick, 1000)
+    
+}
+function delayStart(){
+    setTimeout(startClock() , 5000);
+    setInterval(secTick , 1000);
+   
+   
+}
+function stopClock(){
+    clearInterval(clockInterval);
+}
