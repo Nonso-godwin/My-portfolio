@@ -45,7 +45,7 @@ function startClock (){
     
 }
 function delayStart(){
-    setTimeout(startClock() , 5000);
+    setTimeout(secTick , 5000);
     setInterval(secTick , 1000);
    
    
